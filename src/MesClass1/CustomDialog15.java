@@ -14,12 +14,12 @@ public class CustomDialog15 extends JDialog {
     JLabel valeur1 = new JLabel();
     JLabel valeur2 = new JLabel();
     JLabel valeur3 = new JLabel();
-    JLabel valeur4 = new JLabel() ;
+    JLabel valeur4 = new JLabel();
     JButton btnOK = new JButton();
     JButton btnRAZ = new JButton();
     GridLayout gridLayout1 = new GridLayout();
 
-    public CustomDialog15(Frame owner,String titre,Boolean modal) {
+    public CustomDialog15(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -69,8 +69,8 @@ public class CustomDialog15 extends JDialog {
         jPanel2.add(btnOK, null);
         jPanel2.add(btnRAZ, null);
 
-        this.getContentPane().add(jPanel2,  BorderLayout.EAST);
-        this.getContentPane().add(jPanel1,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel2, BorderLayout.EAST);
+        this.getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         btnOK.addActionListener(e -> {
             String temp = jTextField1.getText();

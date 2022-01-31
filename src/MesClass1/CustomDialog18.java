@@ -9,7 +9,7 @@ public class CustomDialog18 extends JDialog {
     JLabel resultat1 = new JLabel("z = (a>b ? a : b) + (a<=b ? a :b)");
     JLabel resultat2 = new JLabel("z = a + b");
 
-    public CustomDialog18(Frame owner,String titre,Boolean modal) {
+    public CustomDialog18(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -20,6 +20,6 @@ public class CustomDialog18 extends JDialog {
         jPanel.setLayout(null);
         jPanel.add(resultat1, null);
         jPanel.add(resultat2, null);
-        this.getContentPane().add(jPanel,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel, BorderLayout.CENTER);
     }
 }

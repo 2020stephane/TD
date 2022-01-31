@@ -17,11 +17,11 @@ public class MenuSelect implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JMenuItem source = (JMenuItem)(e.getSource());
+        JMenuItem source = (JMenuItem) (e.getSource());
         String s = "Action event detected." + newline + "    Event source: " + source.getText();
         PaneCreate.output.append(s + newline);
         String exemple = source.getText();
-        exemple = exemple.substring(0,4);
+        exemple = exemple.substring(0, 4);
         switch (exemple) {
             case ("1.1 ") -> {
                 CustomDialog11 mywindow = new CustomDialog11();
@@ -208,7 +208,8 @@ public class MenuSelect implements ActionListener {
                 mywindow410.setVisible(true);
             }
 
-        default -> {  }
+            default -> {
+            }
         }
     }
 }

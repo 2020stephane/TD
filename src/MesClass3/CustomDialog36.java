@@ -17,7 +17,7 @@ public class CustomDialog36 extends JDialog {
     JButton btnOK = new JButton("GO");
     JButton btnRAZ = new JButton("RAZ");
 
-    public CustomDialog36(Frame owner,String titre,Boolean modal) {
+    public CustomDialog36(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -29,9 +29,9 @@ public class CustomDialog36 extends JDialog {
         gridLayout.setColumns(2);
         gridLayout.setVgap(15);
 
-       labelmontant.setBounds(10,25,150,25);
-       inputmontant.setBounds(160,25,50,25);
-       resultat.setBounds(25,100,150,25);
+        labelmontant.setBounds(10, 25, 150, 25);
+        inputmontant.setBounds(160, 25, 50, 25);
+        resultat.setBounds(25, 100, 150, 25);
 
         panel1.setBorder(BorderFactory.createEtchedBorder());
         panel2.setBorder(BorderFactory.createEtchedBorder());
@@ -41,8 +41,8 @@ public class CustomDialog36 extends JDialog {
         panel2.add(btnOK);
         panel2.add(btnRAZ);
 
-        this.getContentPane().add(panel1,BorderLayout.CENTER);
-        this.getContentPane().add(panel2,BorderLayout.SOUTH);
+        this.getContentPane().add(panel1, BorderLayout.CENTER);
+        this.getContentPane().add(panel2, BorderLayout.SOUTH);
 
         btnOK.addActionListener(e -> {
 
@@ -51,10 +51,10 @@ public class CustomDialog36 extends JDialog {
             int annee = 0;
 
             temp1 = Double.parseDouble(inputmontant.getText());
-            temp2 = temp1 *2;
-            while (temp1 < temp2 ) {
+            temp2 = temp1 * 2;
+            while (temp1 < temp2) {
                 temp1 = temp1 + (temp1 * 0.2);
-                annee = annee +1;
+                annee = annee + 1;
             }
             resultat.setText("il faut " + annee + " ans.");
 

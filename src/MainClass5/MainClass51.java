@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class MainClass51 {
     public static void main(String[] args) {
 
-        int[] Tab = {9,4,2,12,42};
+        int[] Tab = {9, 4, 2, 12, 42};
         int valmin;
 
         valmin = Min(Tab);
@@ -11,6 +11,7 @@ public class MainClass51 {
 
 
     }
+
     public static int Min(int[] tab) {
 
         int min;
@@ -18,5 +19,5 @@ public class MainClass51 {
         min = tab[0];
         return min;
     }
- }
+}
 

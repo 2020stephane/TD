@@ -9,8 +9,7 @@ public class CustomDialog310 extends JDialog {
     JScrollPane scrollPane;
 
 
-
-    public CustomDialog310(Frame owner,String titre,Boolean modal) {
+    public CustomDialog310(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -22,15 +21,15 @@ public class CustomDialog310 extends JDialog {
         output.setEditable(false);
         scrollPane = new JScrollPane(output);
         panel.add(scrollPane, BorderLayout.NORTH);
-        this.getContentPane().add(panel,BorderLayout.CENTER);
+        this.getContentPane().add(panel, BorderLayout.CENTER);
 
         int i;
         int somme = 0;
 
-        for (i=1; i<10000; i++) {
+        for (i = 1; i < 10000; i++) {
             somme = somme + String.valueOf(i).length();
         }
-            output.append(" le nombre de chiffre est " + somme  + "\n");
+        output.append(" le nombre de chiffre est " + somme + "\n");
 
     }
 }

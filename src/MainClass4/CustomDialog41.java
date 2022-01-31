@@ -59,13 +59,12 @@ public class CustomDialog41 extends JDialog {
             String temp1;
             temp1 = inputsaisie.getText();
             int compteur = 0;
-            for (int i = 0; i< temp1.length(); i++) {
-                if (temp1.charAt(i) == 'e'){
-                    compteur ++;
+            for (int i = 0; i < temp1.length(); i++) {
+                if (temp1.charAt(i) == 'e') {
+                    compteur++;
                 }
             }
             output.append("il y a " + compteur + " e" + "\n");
-
 
 
         });

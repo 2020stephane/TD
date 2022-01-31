@@ -18,7 +18,7 @@ public class CustomDialog37 extends JDialog {
     JTextField inputtable = new JTextField("");
 
 
-    public CustomDialog37(Frame owner,String titre,Boolean modal) {
+    public CustomDialog37(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -44,11 +44,11 @@ public class CustomDialog37 extends JDialog {
         scrollPane = new JScrollPane(output);
         panel1.add(scrollPane, BorderLayout.NORTH);
 
-        panel3.add(labeltable,null);
-        panel3.add(inputtable,null);
+        panel3.add(labeltable, null);
+        panel3.add(inputtable, null);
 
-        panel2.add(btnOK,null);
-        panel2.add(btnRAZ,null);
+        panel2.add(btnOK, null);
+        panel2.add(btnRAZ, null);
 
         this.getContentPane().add(panel1, BorderLayout.CENTER);
         this.getContentPane().add(panel3, BorderLayout.NORTH);
@@ -59,16 +59,16 @@ public class CustomDialog37 extends JDialog {
             int temp1 = 0, i;
 
             temp1 = Integer.parseInt(inputtable.getText());
-            output.append("\n" +"Table de " + temp1 +"\n");
+            output.append("\n" + "Table de " + temp1 + "\n");
             for (i = 0; i < 10; i++) {
 
-                output.append(temp1 + " * " + i + " = " + temp1 * i +"\n");
+                output.append(temp1 + " * " + i + " = " + temp1 * i + "\n");
             }
 
 
         });
         btnRAZ.addActionListener(e -> {
-           inputtable.setText("");
+            inputtable.setText("");
         });
 
     }

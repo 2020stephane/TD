@@ -30,33 +30,33 @@ public class CustomDialog31 extends JDialog {
         gridLayout1.setRows(1);
         gridLayout1.setColumns(2);
         gridLayout1.setVgap(15);
-        jpanel2.setBorder(BorderFactory.createEtchedBorder(Color.BLUE,Color.BLUE));
+        jpanel2.setBorder(BorderFactory.createEtchedBorder(Color.BLUE, Color.BLUE));
         jpanel1.setBorder(BorderFactory.createEtchedBorder());
         jpanel1.setLayout(null);
 
-        label1.setBounds(0,25,100,25);
-        label2.setBounds(0,50,100,25);
-        label3.setBounds(0,75,100,25);
-        input1.setBounds(100,25,100,25);
-        input2.setBounds(100,50,100,25);
-        input3.setBounds(100,75,100,25);
-        labels.setBounds(0,120,100,25);
-        resultat.setBounds(100,120,100,25);
+        label1.setBounds(0, 25, 100, 25);
+        label2.setBounds(0, 50, 100, 25);
+        label3.setBounds(0, 75, 100, 25);
+        input1.setBounds(100, 25, 100, 25);
+        input2.setBounds(100, 50, 100, 25);
+        input3.setBounds(100, 75, 100, 25);
+        labels.setBounds(0, 120, 100, 25);
+        resultat.setBounds(100, 120, 100, 25);
         resultat.setEditable(false);
 
-        jpanel1.add(label1,null);
-        jpanel1.add(label2,null);
-        jpanel1.add(label3,null);
-        jpanel1.add(input1,null);
-        jpanel1.add(input2,null);
-        jpanel1.add(input3,null);
-        jpanel1.add(labels,null);
-        jpanel1.add(resultat,null);
-        jpanel2.add(btnOK,null);
-        jpanel2.add(btnRAZ,null);
+        jpanel1.add(label1, null);
+        jpanel1.add(label2, null);
+        jpanel1.add(label3, null);
+        jpanel1.add(input1, null);
+        jpanel1.add(input2, null);
+        jpanel1.add(input3, null);
+        jpanel1.add(labels, null);
+        jpanel1.add(resultat, null);
+        jpanel2.add(btnOK, null);
+        jpanel2.add(btnRAZ, null);
 
-        this.getContentPane().add(jpanel1,BorderLayout.CENTER);
-        this.getContentPane().add(jpanel2,  BorderLayout.SOUTH);
+        this.getContentPane().add(jpanel1, BorderLayout.CENTER);
+        this.getContentPane().add(jpanel2, BorderLayout.SOUTH);
 
         btnOK.addActionListener(e -> {
 
@@ -64,7 +64,7 @@ public class CustomDialog31 extends JDialog {
             temp2 = Integer.parseInt(input2.getText());
             temp3 = Integer.parseInt(input3.getText());
             temp4 = temp1 + temp2 + temp3;
-            outpt.append("temp1 = " + temp1 + " temp2 = "+temp2+" temp3 = "+temp3+" res="+"\n");
+            outpt.append("temp1 = " + temp1 + " temp2 = " + temp2 + " temp3 = " + temp3 + " res=" + "\n");
             resultat.setText(Integer.toString(temp4));
         });
         btnRAZ.addActionListener(e -> {

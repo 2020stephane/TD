@@ -69,7 +69,7 @@ public class CustomDialog312 extends JDialog {
             temp1 = inputchiffre.getText();
             temp3 = Integer.parseInt(temp1);
             index = temp3;
-            for ( i = 0; i <= index; i++) {
+            for (i = 0; i <= index; i++) {
                 temp2 = new StringBuilder();
                 temp3 = i * i;
                 temp4 = Integer.toString(temp3);
@@ -79,9 +79,11 @@ public class CustomDialog312 extends JDialog {
                     temp2.append(temp4.charAt(longueur));
                     longueur -= 1;
                 } while ((longueur >= 0));
-                if (Objects.equals(temp4, temp2.toString())) { compteur += 1; }
+                if (Objects.equals(temp4, temp2.toString())) {
+                    compteur += 1;
+                }
             }
-            output.append("nombre de palindrome" + compteur+ "\n");
+            output.append("nombre de palindrome" + compteur + "\n");
         });
         btnRAZ.addActionListener(e -> inputchiffre.setText(""));
 

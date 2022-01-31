@@ -17,7 +17,7 @@ public class CustomDialog32 extends JDialog {
     JButton btnRAZ = new JButton("RAZ");
     GridLayout gridLayout1 = new GridLayout();
 
-    public CustomDialog32(Frame owner,String titre,Boolean modal) {
+    public CustomDialog32(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -32,30 +32,30 @@ public class CustomDialog32 extends JDialog {
         jpanel1.setLayout(null);
         resultat.setEditable(false);
 
-        label1.setBounds(0,25,100,25);
-        input1.setBounds(100,25,100,25);
-        labels.setBounds(0,120,100,25);
-        resultat.setBounds(100,120,100,25);
+        label1.setBounds(0, 25, 100, 25);
+        input1.setBounds(100, 25, 100, 25);
+        labels.setBounds(0, 120, 100, 25);
+        resultat.setBounds(100, 120, 100, 25);
         resultat.setEditable(false);
 
-        jpanel1.add(label1,null);
-        jpanel1.add(labels,null);
-        jpanel1.add(input1,null);
-        jpanel1.add(resultat,null);
-        jpanel2.add(btnOK,null);
-        jpanel2.add(btnRAZ,null);
+        jpanel1.add(label1, null);
+        jpanel1.add(labels, null);
+        jpanel1.add(input1, null);
+        jpanel1.add(resultat, null);
+        jpanel2.add(btnOK, null);
+        jpanel2.add(btnRAZ, null);
 
-        this.getContentPane().add(jpanel1,BorderLayout.CENTER);
-        this.getContentPane().add(jpanel2,  BorderLayout.SOUTH);
+        this.getContentPane().add(jpanel1, BorderLayout.CENTER);
+        this.getContentPane().add(jpanel2, BorderLayout.SOUTH);
 
         btnOK.addActionListener(e -> {
 
-            int temp1,i;
+            int temp1, i;
             double temp2 = 0;
 
             temp1 = Integer.parseInt(input1.getText());
             for (i = 1; i <= temp1; i++) {
-                temp2 = temp2 + Math.pow(i,2);
+                temp2 = temp2 + Math.pow(i, 2);
             }
             resultat.setText(Double.toString(temp2));
         });

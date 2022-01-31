@@ -61,7 +61,7 @@ public class CustomDialog39 extends JDialog {
             temp1 = Integer.parseInt(inputtable.getText());
             output.append("\n" + "nombre de lignes = " + temp1 + "\n");
             for (i = temp1; i > 0; i--) {
-                for (j=0; j<i; j++) {
+                for (j = 0; j < i; j++) {
                     output.append("*");
                 }
                 output.append("\n");

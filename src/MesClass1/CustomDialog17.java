@@ -6,7 +6,7 @@ import java.awt.*;
 public class CustomDialog17 extends JDialog {
 
 
-    public CustomDialog17(Frame owner,String titre,Boolean modal) {
+    public CustomDialog17(Frame owner, String titre, Boolean modal) {
 
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);

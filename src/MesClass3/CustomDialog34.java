@@ -9,7 +9,7 @@ public class CustomDialog34 extends JDialog {
     JScrollPane scrollPane;
     int i;
 
-    public CustomDialog34(Frame owner,String titre,Boolean modal) {
+    public CustomDialog34(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -21,9 +21,9 @@ public class CustomDialog34 extends JDialog {
         output.setEditable(false);
         scrollPane = new JScrollPane(output);
         panel.add(scrollPane, BorderLayout.NORTH);
-        this.getContentPane().add(panel,BorderLayout.CENTER);
+        this.getContentPane().add(panel, BorderLayout.CENTER);
 
-        for (i=1; i<20; i++) {
+        for (i = 1; i < 20; i++) {
             if ((i % 2) != 0) {
                 output.append(i + " est impaire " + "\n");
             } else output.append(i + " est paire " + "\n");

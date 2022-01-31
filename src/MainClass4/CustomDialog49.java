@@ -101,7 +101,7 @@ public class CustomDialog49 extends JDialog {
 
             int i;
 
-            for ( i = 0; i< 7; i++) {
+            for (i = 0; i < 7; i++) {
 
                 if ((tabtemp[i] % 2) != 0) {
                     tabimpair[i] = tabtemp[i];
@@ -109,15 +109,15 @@ public class CustomDialog49 extends JDialog {
                     tabpair[i] = tabtemp[i];
                 }
             }
-            output.append("tableau impaire = "+ "\n" );
-           for ( i = 0; i< tailleimpaire; i++) {
-                output.append("  " + tabimpair[i] );
+            output.append("tableau impaire = " + "\n");
+            for (i = 0; i < tailleimpaire; i++) {
+                output.append("  " + tabimpair[i]);
             }
-            output.append("tableau paire = "+ "\n" );
-            for ( i = 0; i< taillepaire; i++) {
-                output.append("  " + tabimpair[i] );
+            output.append("tableau paire = " + "\n");
+            for (i = 0; i < taillepaire; i++) {
+                output.append("  " + tabimpair[i]);
             }
-       });
+        });
         btnRAZ.addActionListener(e -> {
 
             String temp;

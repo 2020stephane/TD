@@ -56,12 +56,12 @@ public class CustomDialog42 extends JDialog {
 
         btnOK.addActionListener(e -> {
 
-            char tableauchar[] = {'a','b','c','d','e','f','g'};
+            char tableauchar[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
             char inputlettre = inputsaisie.getText().charAt(0);
             int tailletableau = tableauchar.length;
             boolean valeur = false;
 
-            for (int i=0; i<tailletableau; i++) {
+            for (int i = 0; i < tailletableau; i++) {
                 if (inputlettre == tableauchar[i]) {
                     valeur = true;
                     break;

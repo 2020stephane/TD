@@ -12,8 +12,8 @@ public class MainClass {
         MenuCreate demo = new MenuCreate();
         myPane = new PaneCreate();
         frame.setJMenuBar(demo.createMenuBar());
-        frame.setBounds(400,100,900,500);
-        frame.setMinimumSize(new Dimension(900,500));
+        frame.setBounds(400, 100, 900, 500);
+        frame.setMinimumSize(new Dimension(900, 500));
         frame.setResizable(false);
 
         frame.setContentPane(myPane.createPane());

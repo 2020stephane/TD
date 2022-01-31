@@ -62,16 +62,16 @@ public class CustomDialog313 extends JDialog {
             int pos = 0;
 
             temp1 = inputsaisie.getText();
-            longueur = temp1.length() -1;
-            if (longueur >=0) {
+            longueur = temp1.length() - 1;
+            if (longueur >= 0) {
                 temp2.append(temp1.charAt(0));
-               do {
-                   pos +=1;
-                   pos = temp1.indexOf(" ",pos);
+                do {
+                    pos += 1;
+                    pos = temp1.indexOf(" ", pos);
 
-                   if (pos != -1) temp2.append(temp1.charAt(pos + 1));
+                    if (pos != -1) temp2.append(temp1.charAt(pos + 1));
 
-               }while (pos != -1);
+                } while (pos != -1);
             }
             output.append("Vos initiales sont " + temp2 + "\n");
 

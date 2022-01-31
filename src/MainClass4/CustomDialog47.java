@@ -76,8 +76,8 @@ public class CustomDialog47 extends JDialog {
             valeur = Integer.parseInt(temp);
             tab[index] = valeur;
             output.append("tab[" + index + "/" + "]=" + tab[index] + "\n");
-            labelvaleur2.setText("valeur " + (index+2));
-            index = index +1;
+            labelvaleur2.setText("valeur " + (index + 2));
+            index = index + 1;
             inputval.setText("");
         });
 
@@ -85,11 +85,10 @@ public class CustomDialog47 extends JDialog {
 
             int[] tab2 = new int[taille];
             Arrays.sort(tab);
-            for (int i=0; i<taille; i++) {
-                output.append("  " + tab[i] );
+            for (int i = 0; i < taille; i++) {
+                output.append("  " + tab[i]);
             }
-               output.append("valeur max = " + tab[taille-1] + "\n");
-
+            output.append("valeur max = " + tab[taille - 1] + "\n");
 
 
         });

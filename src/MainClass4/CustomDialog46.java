@@ -84,28 +84,28 @@ public class CustomDialog46 extends JDialog {
 
             output.append("\n");
 
-            for (i=0; i<5; i++) {
+            for (i = 0; i < 5; i++) {
                 index = i;
-                for (j=i; j<5; j++) {
+                for (j = i; j < 5; j++) {
                     if (tableau[index] > tableau[j]) {
                         index = j;
                     }
                 }
-                int min =tableau[index];
+                int min = tableau[index];
                 tableau[index] = tableau[i];
                 tableau[i] = min;
             }
-            for  (i=0; i<5; i++) {
+            for (i = 0; i < 5; i++) {
                 output.append("tableau[" + i + "]=" + tableau[i] + "\n" + "\n");
             }
-       });
+        });
         btnRAZ.addActionListener(e -> {
             input1.setText("");
             input2.setText("");
             input3.setText("");
             input4.setText("");
             input5.setText("");
-         });
+        });
 
     }
 }

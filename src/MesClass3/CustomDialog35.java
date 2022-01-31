@@ -51,26 +51,26 @@ public class CustomDialog35 extends JDialog {
         input1.setBounds(135,120,50,25);
         input2.setBounds(135,150,50,25);*/
 
-        jpanel3.add(label2,null);
-        jpanel3.add(input2,null);
+        jpanel3.add(label2, null);
+        jpanel3.add(input2, null);
 
-        jpanel3.add(label1,null);
-        jpanel3.add(input1,null);
+        jpanel3.add(label1, null);
+        jpanel3.add(input1, null);
 
-        jpanel2.add(btnOK,null);
-        jpanel2.add(btnRAZ,null);
+        jpanel2.add(btnOK, null);
+        jpanel2.add(btnRAZ, null);
 
         this.getContentPane().add(jpanel1, BorderLayout.NORTH);
         this.getContentPane().add(jpanel3, BorderLayout.CENTER);
         this.getContentPane().add(jpanel2, BorderLayout.SOUTH);
 
         btnOK.addActionListener(e -> {
-            int borns,borni;
+            int borns, borni;
 
             borns = Integer.parseInt(input1.getText());
             borni = Integer.parseInt(input2.getText());
 
-            for (i = borni +1; i < borns; i++) {
+            for (i = borni + 1; i < borns; i++) {
                 if ((i % 2) == 0) {
                     output.append(i + " est paire " + "\n");
                 }

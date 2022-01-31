@@ -10,7 +10,7 @@ public class CustomDialog38 extends JDialog {
     int i;
 
 
-    public CustomDialog38(Frame owner,String titre,Boolean modal) {
+    public CustomDialog38(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -22,11 +22,13 @@ public class CustomDialog38 extends JDialog {
         output.setEditable(false);
         scrollPane = new JScrollPane(output);
         panel.add(scrollPane, BorderLayout.NORTH);
-        this.getContentPane().add(panel,BorderLayout.CENTER);
+        this.getContentPane().add(panel, BorderLayout.CENTER);
 
-        for (i=10; i<=20; i++) {
-            if (i == 13)  { continue;}
-            output.append(" chiffre = " + i  + "\n");
+        for (i = 10; i <= 20; i++) {
+            if (i == 13) {
+                continue;
+            }
+            output.append(" chiffre = " + i + "\n");
         }
     }
 }

@@ -6,10 +6,10 @@ import java.awt.*;
 public class CustomDialog33 extends JDialog {
 
     JTextArea output;
-     int i;
+    int i;
 
 
-    public CustomDialog33(Frame owner,String titre,Boolean modal) {
+    public CustomDialog33(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -20,9 +20,9 @@ public class CustomDialog33 extends JDialog {
         output = new JTextArea(10, 30);
         output.setEditable(false);
         panel.add(output, BorderLayout.NORTH);
-        this.getContentPane().add(panel,BorderLayout.CENTER);
+        this.getContentPane().add(panel, BorderLayout.CENTER);
 
-        for (i=1; i<=10; i++) {
+        for (i = 1; i <= 10; i++) {
             if ((i % 2) != 0) {
                 output.append(i + ", ");
             }

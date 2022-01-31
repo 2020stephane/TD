@@ -52,8 +52,8 @@ public class CustomDialog22 extends JDialog {
         gridLayout1.setColumns(1);
         gridLayout1.setVgap(15);
 
-        this.getContentPane().add(jPanel2,  BorderLayout.EAST);
-        this.getContentPane().add(jPanel1,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel2, BorderLayout.EAST);
+        this.getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         btnOK.addActionListener(e -> {
             double da, db, total;

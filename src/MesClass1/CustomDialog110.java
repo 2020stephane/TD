@@ -12,7 +12,7 @@ public class CustomDialog110 extends JDialog {
     JButton btnOK = new JButton();
     GridLayout gridLayout1 = new GridLayout();
 
-    public CustomDialog110(Frame owner,String titre,Boolean modal) {
+    public CustomDialog110(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -36,8 +36,8 @@ public class CustomDialog110 extends JDialog {
         jPanel1.add(labela, null);
         jPanel2.add(btnOK, null);
 
-        this.getContentPane().add(jPanel2,  BorderLayout.SOUTH);
-        this.getContentPane().add(jPanel1,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel2, BorderLayout.SOUTH);
+        this.getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         btnOK.addActionListener(e -> {
             int chA = 'A';

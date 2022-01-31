@@ -15,7 +15,7 @@ public class CustomDialog19 extends JDialog {
     JButton btnRAZ = new JButton();
     GridLayout gridLayout1 = new GridLayout();
 
-    public CustomDialog19(Frame owner,String titre,Boolean modal) {
+    public CustomDialog19(Frame owner, String titre, Boolean modal) {
 
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -48,19 +48,21 @@ public class CustomDialog19 extends JDialog {
         jPanel2.add(btnOK, null);
         jPanel2.add(btnRAZ, null);
 
-        this.getContentPane().add(jPanel2,  BorderLayout.EAST);
-        this.getContentPane().add(jPanel1,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel2, BorderLayout.EAST);
+        this.getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         btnOK.addActionListener(e -> {
             int total;
             int nbrh = 0, nbrm = 0, nbrs = 0;
             String temp = Inputn.getText();
             total = Integer.parseInt(temp);
-            if (total == 0){
+            if (total == 0) {
                 resultat.setText("resultat 0,nombre null");
             } else if (total > 0) {
                 resultat.setText("resultat +1,nombre positif");
-            }else { resultat.setText("resultat -1,nombre negatif"); }
+            } else {
+                resultat.setText("resultat -1,nombre negatif");
+            }
         });
 
         btnRAZ.addActionListener(e -> {

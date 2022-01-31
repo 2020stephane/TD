@@ -9,7 +9,7 @@ public class CustomDialog24 extends JDialog {
     JPanel jPanel2 = new JPanel();
     JTextField inputx = new JTextField();
     JTextField inputy = new JTextField();
-    JTextField  inputz = new JTextField();
+    JTextField inputz = new JTextField();
     JLabel labelx = new JLabel();
     JLabel labely = new JLabel();
     JLabel labelz = new JLabel();
@@ -61,11 +61,11 @@ public class CustomDialog24 extends JDialog {
         jPanel2.add(btnOK, null);
         jPanel2.add(btnRAZ, null);
 
-        this.getContentPane().add(jPanel2,  BorderLayout.SOUTH);
-        this.getContentPane().add(jPanel1,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel2, BorderLayout.SOUTH);
+        this.getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         btnOK.addActionListener(e -> {
-            int valx,valy,valz;
+            int valx, valy, valz;
 
             String temp = inputx.getText();
             valx = Integer.parseInt(temp);
@@ -73,7 +73,7 @@ public class CustomDialog24 extends JDialog {
             valy = Integer.parseInt(temp);
             temp = inputz.getText();
             valz = Integer.parseInt(temp);
-            if (valx <= valy  && valy <= valz) {
+            if (valx <= valy && valy <= valz) {
                 labelres.setText("nombres dans l'ordre croissant.");
             } else {
                 labelres.setText("nombres dans le desordre.");
@@ -84,7 +84,7 @@ public class CustomDialog24 extends JDialog {
         btnRAZ.addActionListener(e -> {
             inputx.setText("");
             inputy.setText("");
-            inputz.setText("" );
+            inputz.setText("");
             labelx.setText("x = ");
             labely.setText("y =");
             labelz.setText("z = ");

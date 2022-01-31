@@ -63,7 +63,7 @@ public class CustomDialog43 extends JDialog {
 
             for (i = 0; i < tailletexte; i++) {
                 if (inputlettre.charAt(i) != 'e') {
-                   newchaine = newchaine + inputlettre.charAt(i);
+                    newchaine = newchaine + inputlettre.charAt(i);
                 }
             }
             output.append("le texte sans le e est " + newchaine + "\n");

@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class MainClass56 {
     public static void main(String[] args) {
 
-           int max;
-           Scanner sc = new Scanner(System.in);
+        int max;
+        Scanner sc = new Scanner(System.in);
 
-           System.out.println("Donner un Maximum : \n");
-           max = sc.nextInt();
+        System.out.println("Donner un Maximum : \n");
+        max = sc.nextInt();
 
-           System.out.println("Voilà les nombres parfait : ");
-            for (int j = 1; j <= max; j++) {
-                if (estParfait(j)) {
-                    System.out.println(j);
-                }
-
+        System.out.println("Voilà les nombres parfait : ");
+        for (int j = 1; j <= max; j++) {
+            if (estParfait(j)) {
+                System.out.println(j);
             }
+
+        }
     }
 
     public static boolean estParfait(int nombre) {

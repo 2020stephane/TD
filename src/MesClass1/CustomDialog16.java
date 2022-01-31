@@ -19,7 +19,7 @@ public class CustomDialog16 extends JDialog {
     JButton btnRAZ = new JButton();
     GridLayout gridLayout1 = new GridLayout();
 
-    public CustomDialog16(Frame owner,String titre,Boolean modal) {
+    public CustomDialog16(Frame owner, String titre, Boolean modal) {
         super(owner, titre, modal);
         this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         this.setResizable(false);
@@ -71,23 +71,23 @@ public class CustomDialog16 extends JDialog {
         jPanel2.add(btnOK, null);
         jPanel2.add(btnRAZ, null);
 
-        this.getContentPane().add(jPanel2,  BorderLayout.EAST);
-        this.getContentPane().add(jPanel1,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel2, BorderLayout.EAST);
+        this.getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         btnOK.addActionListener(e -> {
             int total;
             int nbrh = 0, nbrm = 0, nbrs = 0;
             String temp = Inputs.getText();
             total = Integer.parseInt(temp);
-            if (total > 3600 && total < (2600 * 24 )){
+            if (total > 3600 && total < (2600 * 24)) {
                 nbrh = total / 3600;
                 total = total % 3600;
-                nbrm = total /60;
+                nbrm = total / 60;
                 nbrs = total % 60;
-             } else if (total > 60) {
-                nbrm = total /60;
+            } else if (total > 60) {
+                nbrm = total / 60;
                 nbrs = total % 60;
-               }
+            }
             if (total < 60) nbrs = total;
             temp = Integer.toString(nbrh);
             Theure.setText(temp);

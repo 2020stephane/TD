@@ -58,8 +58,8 @@ public class CustomDialog410 extends JDialog {
 
 
             int nbrlign = Integer.parseInt(inputsaisie.getText());
-            for (int i=0; i<=nbrlign; i++) {
-                for (int j = 0; j<i; j++) {
+            for (int i = 0; i <= nbrlign; i++) {
+                for (int j = 0; j < i; j++) {
                     output.append("*");
                 }
                 output.append("\n");

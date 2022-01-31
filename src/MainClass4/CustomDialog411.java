@@ -22,7 +22,7 @@ public class CustomDialog411 extends JDialog {
     JLabel labelvaleur2 = new JLabel("valeur ");
     JTextField inputval = new JTextField("");
 
-    int[][] tab = {{0,2,4,6,8},{1,3,5,7,9}};
+    int[][] tab = {{0, 2, 4, 6, 8}, {1, 3, 5, 7, 9}};
     int index = 0;
     int taille;
 
@@ -69,26 +69,24 @@ public class CustomDialog411 extends JDialog {
         btnsuiv.addActionListener(e -> {
 
 
-
-            for (int i=0; i<taille; i++) {
-                output.append(tab[0][i]+"");
+            for (int i = 0; i < taille; i++) {
+                output.append(tab[0][i] + "");
             }
             output.append("tab[" + index + "/" + "]=" + tab[index] + "\n");
-            labelvaleur2.setText("valeur " + (index+2));
-            index = index +1;
+            labelvaleur2.setText("valeur " + (index + 2));
+            index = index + 1;
             inputval.setText("");
         });
 
         btnOK.addActionListener(e -> {
 
-            for (int i=0; i<5; i++) {
-                output.append(tab[0][i]+"");
+            for (int i = 0; i < 5; i++) {
+                output.append(tab[0][i] + "");
             }
             output.append("\n");
-            for (int i=0; i<5; i++) {
-                output.append(tab[1][i]+"");
+            for (int i = 0; i < 5; i++) {
+                output.append(tab[1][i] + "");
             }
-
 
 
         });

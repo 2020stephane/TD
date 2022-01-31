@@ -61,16 +61,16 @@ public class CustomDialog311 extends JDialog {
             int longueur = 0;
 
             temp1 = inputmot.getText();
-            longueur = (temp1.length()) -1;
-            output.append("\n" + "palindrome de " + temp1 + " est " +"\n");
-            do  {
+            longueur = (temp1.length()) - 1;
+            output.append("\n" + "palindrome de " + temp1 + " est " + "\n");
+            do {
                 temp2 = temp2 + temp1.charAt(longueur);
-                longueur -=1;
-            } while ((longueur !=0));
+                longueur -= 1;
+            } while ((longueur != 0));
             output.append(" " + temp2 + "\n");
             if (temp1.equals(temp2)) {
-                output.append("c'est un palindrome" +"\n");
-            } else output.append("c'est pas un palindrome" +"\n");
+                output.append("c'est un palindrome" + "\n");
+            } else output.append("c'est pas un palindrome" + "\n");
 
         });
         btnRAZ.addActionListener(e -> {

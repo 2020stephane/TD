@@ -48,26 +48,26 @@ public class CustomDialog23 extends JDialog {
         gridLayout1.setColumns(1);
         gridLayout1.setVgap(15);
 
-        this.getContentPane().add(jPanel2,  BorderLayout.EAST);
-        this.getContentPane().add(jPanel1,  BorderLayout.CENTER);
+        this.getContentPane().add(jPanel2, BorderLayout.EAST);
+        this.getContentPane().add(jPanel1, BorderLayout.CENTER);
 
         btnOK.addActionListener(e -> {
             double da, total;
             String temp = Inputa.getText();
             da = Double.parseDouble(temp);
-            if (da>100 && da<500){
+            if (da > 100 && da < 500) {
                 total = da - (da * 0.05);
                 labelb.setText("remise = 5%");
                 temp = Double.toString(total);
                 labelr.setText("Montant apres remise = " + temp);
             }
-            if (da>500){
+            if (da > 500) {
                 total = da - (da * 0.08);
                 labelb.setText("remise = 8%");
                 temp = Double.toString(total);
                 labelr.setText("Montant apres remise = " + temp);
             }
-            if (da<100) {
+            if (da < 100) {
                 total = da;
                 labelb.setText("pas de remise");
                 temp = Double.toString(total);
